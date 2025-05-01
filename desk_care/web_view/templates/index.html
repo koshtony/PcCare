@@ -9,7 +9,7 @@
                             <i class="fa fa-chart-line fa-3x text-primary"></i>
                             <div class="ms-3">
                                 <p class="mb-2">Temperature</p>
-                                <h6 class="mb-0"></h6>
+                                <h6 class="mb-0" style="color:green" id="temp">{{temp}} °C</h6>
                             </div>
                         </div>
                     </div>
@@ -17,8 +17,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">CPU Performance</p>
-                                <h6 class="mb-0"></h6>
+                                <p class="mb-2">CPU Performance (MHz)</p>
+                                <h6 class="mb-0" style="color:orange;" id="cpu">{{freq["current"]}}</h6>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">RAM Percentage</p>
+                                <p class="mb-2">Network</p>
                                 <h6 class="mb-0"></h6>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Network</p>
+                                <p class="mb-2"></p>
                                 <h6 class="mb-0"></h6>
                             </div>
                         </div>
@@ -51,19 +51,19 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">fan Performance</h6>
+                                <h6 class="mb-0">CPU Performance (MHz)</h6>
                             
                             </div>
-                            <canvas id="worldwide-sales"></canvas>
+                            <canvas id="cpu-performance-chart"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Temperature Check/h6>
+                                <h6 class="mb-0">Temperature Check (°C)</h6>
                               
                             </div>
-                            <canvas id="salse-revenue"></canvas>
+                            <canvas id="cpu-temp-chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -265,5 +265,185 @@
                 </div>
             </div>
             <!-- Widgets End -->
+            <script src="{{url_for('static',filename='lib/chart/chart.min.js')}}"></script>
+            <script>
+
+
+
+            function updateCpuPeformance(){
+             
+                 let url = "{{ url_for('get_cpu_perf_view')}}"
+
+                fetch(url).then(
+                    (resp) => { 
+                        
+                        return resp.json()
+
+                    }).then((data) => {
+
+                    //console.log(data)
+
+                    document.getElementById("cpu").innerHTML = data.toString()
+
+                    
+                }).catch(   
+
+                  err => console.error(err)
+                );  
+            }
+
+            
+           const ctx = document.getElementById('cpu-performance-chart').getContext('2d');
+           const now = new Date().toLocaleTimeString();
+           const chart1 = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels:[now] ,
+                datasets: [{
+                        label: "Min",
+                        data: [{{freq["min"]}}],
+                        backgroundColor: "green"
+                    },
+                    {
+                        label: "Current",
+                        data: [{{freq["current"]}}],
+                        backgroundColor: "orange"
+                    },
+                    {
+                        label: "Max",
+                        data: [{{freq["max"]}}],
+                        backgroundColor: "red"
+                    }
+                ]
+                },
+            options: {
+                responsive: true
+            }
+        });
+
+       
+        const ctx1 = document.getElementById('cpu-temp-chart').getContext('2d');
+          const chart2 =  new Chart(ctx1, {
+            type: "line",
+            data: {
+                labels:[now] ,
+                datasets: [{
+                        label: "Temperature",
+                        data: [{{temp}}],
+                        backgroundColor: "rgba(235, 22, 22, .7)",
+                        borderColor: "red",
+                        fill: false
+                    },
+                    
+                ]
+                },
+            options: {
+                responsive: true
+            }
+        });
+
+
+        async function updateChartData(){
+             
+            let url = "{{ url_for('get_chart_data')}}"
+
+           await fetch(url).then(
+               (resp) => { 
+                   
+                   return resp.json()
+
+
+
+               }).then((data) => {
+
+                const now = new Date().toLocaleTimeString();
+
+                console.log(data)
+
+                chart1.data.labels.push(now)
+
+                chart1.data.datasets[0].data.push(data.min)
+                chart1.data.datasets[1].data.push(data.current)
+                chart1.data.datasets[2].data.push(data.max)
+               
+
+                if (chart1.data.labels.length > 10) {
+                    chart1.data.labels.shift();
+                    chart1.data.datasets[0].data.shift();
+                    chart1.data.datasets[1].data.shift();
+                    chart1.data.datasets[2].data.shift();
+                  }
+
+                chart1.update();
+
+
+              
+           }).catch(   
+
+             err => console.error(err)
+           );  
+       }
+
+       setInterval(updateChartData, 10000);
+
+       
+/*************  ✨ Windsurf Command ⭐  *************/
+                /**
+                 * Fetches the current temperature from the server and updates the UI.
+                 *  
+                 * Fetches the JSON response from the server, parses it, and updates
+                 * the #temp element with the current temperature.
+                 *  
+                 * @throws Error if there is a network error.
+                 */
+
+                 function updateTemp(){
+             
+                    let url = "{{ url_for('get_temp_view')}}"
+   
+                   fetch(url).then(
+                       (resp) => { 
+                           
+                           return resp.json()
+   
+                       }
+                   ).then((data) => {
+   
+                    console.log(data)
+
+                    document.getElementById("temp").innerHTML = data["temp"].toString() + " °C";
+
+                    const now = new Date().toLocaleTimeString();
+
+                    chart2.data.labels.push(now)
+
+                    chart2.data.datasets[0].data.push(data.temp)
+
+                    if (chart2.data.labels.length > 10) {
+                        chart2.data.labels.shift();
+                        chart2.data.datasets[0].data.shift();
+                      }
+
+                    chart2.update()
+
+   
+                    
+   
+   
+                   }).catch(
+   
+                        err => console.error(err)
+                   );
+   
+               }
+   
+            setInterval(updateTemp, 10000);
+
+
+    
+
+
+
+            </script>
 {% endblock content %}
 
