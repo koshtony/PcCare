@@ -1,18 +1,19 @@
 from flask import Flask,render_template 
-from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,get_cpu_performance
+from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
+    get_cpu_performance,get_upload_download_speed,calculate_usage
 from flask import jsonify
 
 from web_view import app
 @app.route('/')
-def home_page(): 
-
-
+def home_page():
     """
     Render the home page of the web interface.
 
     Returns:
         The rendered template for the home page.
     """
+    cpu_temperature = get_cpu_temperature()
+    cpu_performance = get_cpu_performance()
     
     temp = get_cpu_temperature()
     #battery = get_cpu_battery()
@@ -32,8 +33,18 @@ def home_page():
         "min":freq.min,
         "max":freq.max,
     }
-
-    return render_template('index.html',times=times,freq=freq,temp=temp)
+    
+    cpu,memory,disk = calculate_usage()
+    
+    
+   
+    return render_template(
+        'index.html',
+       times=times,freq=freq,temp=temp,
+       cpu=cpu,memory=memory,disk=disk
+      
+        
+    )
 
 
 @app.route('/get_temperature')
@@ -68,3 +79,10 @@ def get_chart_data():
     }
     
     return data
+
+@app.route('/get_download_upload_speed')
+def get_download_upload_speed_view():
+    
+    download_speed,upload_speed = get_upload_download_speed()
+    
+    return {"download_speed":download_speed,"upload_speed":upload_speed}

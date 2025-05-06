@@ -4,6 +4,7 @@ import os
 import wmi
 import time
 import pythoncom
+import speedtest as spt 
 def get_cpu_battery():
     
     
@@ -36,5 +37,24 @@ def get_cpu_performance():
     return psutil.cpu_times(),psutil.cpu_freq()
 
 
+def get_upload_download_speed(): 
+    
+    st = spt.Speedtest()
+
+    st.get_best_server()
+
+    download_speed = st.download()
+
+    upload_speed = st.upload()
+    
+    
+    return f"{download_speed / 1_000_000:.2f} Mbps",f"{upload_speed / 1_000_000:.2f} Mbps"
+
+
+def calculate_usage():
+    
+    cpu,memory,disk = psutil.cpu_percent(interval=1),psutil.virtual_memory().percent,psutil.disk_usage('/').percent	
+
+    return cpu,memory,disk
     
     
