@@ -63,6 +63,8 @@ def get_temp_view():
 
     temp = get_cpu_temperature()
     
+    print(temp)
+    
     return {"temp":temp}
 
 @app.route('/get_cpu_performance')

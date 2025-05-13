@@ -21,11 +21,16 @@ def get_cpu_temperature():
         )
         output = output.decode().strip().split()
         
+        print(len(output))
+        
         if len(output) >= 2:
            
-            temp_kelvin = int(output[2])
+            temp_kelvin = int(output[1])
             temp_celsius = temp_kelvin - 273.15
             return round(temp_celsius, 2)
+        
+       
+            
         else:
             return "Temperature data not available."
     except Exception as e:
