@@ -1,7 +1,8 @@
-from flask import Flask,render_template 
+from flask import Flask,render_template,request
 from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
-    get_cpu_performance,get_upload_download_speed,calculate_usage
-from pc_data.web_protection import block_sites_using_host_file,block_sites_using_firewall,set_to_admin
+    get_cpu_performance,calculate_usage
+from pc_data.web_protection import block_sites_using_host_file,\
+    block_sites_using_firewall,set_to_admin,get_site_domains_from_keywords
 from flask import jsonify
 
 from web_view import app
@@ -127,7 +128,7 @@ def get_download_upload_speed_view():
         with the keys 'download_speed' and 'upload_speed'.
     """
 
-    download_speed,upload_speed = get_upload_download_speed()
+    download_speed,upload_speed = 0,0
     
     return {"download_speed":download_speed,"upload_speed":upload_speed}
 
@@ -164,5 +165,23 @@ def block_sites_view():
         print(resp)
     
     return render_template('web_protection.html')
+
+@app.route('/block_selected_site',methods=["POST"])
+def block_selected_site_view(): 
+    
+    website = request.form.get("website")
+    
+    return f"<strong>{website}</strong>"
+
+@app.route('/search_site_and_block',methods=["POST"])
+def search_site_and_block_view(): 
+    
+    site_key_word = request.form.get("site_key_word")
+    
+    sites_domains = get_site_domains_from_keywords(site_key_word,2)
+    
+    return render_template('search_site.html',sites = sites_domains)
+    
+    
     
     

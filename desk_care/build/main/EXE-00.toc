@@ -1,0 +1,997 @@
+('C:\\Users\\EliteBook 800 G4\\Videos\\PcCare\\desk_care\\dist\\main.exe',
+ False,
+ False,
+ False,
+ 'C:\\Users\\EliteBook 800 '
+ 'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Users\\EliteBook 800 '
+ 'G4\\Videos\\PcCare\\desk_care\\build\\main\\main.pkg',
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pythoncom',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_pythoncom.py',
+   'PYSOURCE'),
+  ('pyi_rth_pywintypes',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_pywintypes.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_cryptography_openssl',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_pyinstaller_hooks_contrib\\rthooks\\pyi_rth_cryptography_openssl.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('main',
+   'C:\\Users\\EliteBook 800 G4\\Videos\\PcCare\\desk_care\\main.py',
+   'PYSOURCE'),
+  ('python312.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\python312.dll',
+   'BINARY'),
+  ('pywin32_system32\\pythoncom312.dll',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pywin32_system32\\pythoncom312.dll',
+   'BINARY'),
+  ('pywin32_system32\\pywintypes312.dll',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\pywin32_system32\\pywintypes312.dll',
+   'BINARY'),
+  ('select.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_wmi.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_wmi.pyd',
+   'EXTENSION'),
+  ('win32\\_win32sysloader.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32\\_win32sysloader.pyd',
+   'EXTENSION'),
+  ('win32\\win32api.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32\\win32api.pyd',
+   'EXTENSION'),
+  ('Pythonwin\\win32ui.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\Pythonwin\\win32ui.pyd',
+   'EXTENSION'),
+  ('win32\\win32event.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32\\win32event.pyd',
+   'EXTENSION'),
+  ('win32\\win32trace.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\win32\\win32trace.pyd',
+   'EXTENSION'),
+  ('psutil\\_psutil_windows.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\psutil\\_psutil_windows.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('cryptography\\hazmat\\bindings\\_rust.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography\\hazmat\\bindings\\_rust.pyd',
+   'EXTENSION'),
+  ('_cffi_backend.cp312-win_amd64.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\_cffi_backend.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\markupsafe\\_speedups.cp312-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('libssl-3.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\DLLs\\libssl-3.dll',
+   'BINARY'),
+  ('Pythonwin\\mfc140u.dll',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\Pythonwin\\mfc140u.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Program '
+   'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\python3.dll',
+   'BINARY'),
+  ('pc_data\\__init__.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\__init__.py',
+   'DATA'),
+  ('pc_data\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('pc_data\\__pycache__\\pc_info.cpython-312.pyc',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\__pycache__\\pc_info.cpython-312.pyc',
+   'DATA'),
+  ('pc_data\\__pycache__\\web_protection.cpython-312.pyc',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\__pycache__\\web_protection.cpython-312.pyc',
+   'DATA'),
+  ('pc_data\\encryptions.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\encryptions.py',
+   'DATA'),
+  ('pc_data\\pc_info.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\pc_info.py',
+   'DATA'),
+  ('pc_data\\web_protection.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\pc_data\\web_protection.py',
+   'DATA'),
+  ('web_view\\__init__.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\__init__.py',
+   'DATA'),
+  ('web_view\\__pycache__\\__init__.cpython-312.pyc',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\__pycache__\\__init__.cpython-312.pyc',
+   'DATA'),
+  ('web_view\\__pycache__\\routes.cpython-312.pyc',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\__pycache__\\routes.cpython-312.pyc',
+   'DATA'),
+  ('web_view\\routes.py',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\routes.py',
+   'DATA'),
+  ('web_view\\static\\css\\bootstrap.min.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\css\\bootstrap.min.css',
+   'DATA'),
+  ('web_view\\static\\css\\style.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\css\\style.css',
+   'DATA'),
+  ('web_view\\static\\icons\\connect.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\connect.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\dashboard.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\dashboard.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\fast.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\fast.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\lock.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\lock.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\repair.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\repair.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\reports.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\reports.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\rocket.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\rocket.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\run.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\run.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\virus.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\virus.svg',
+   'DATA'),
+  ('web_view\\static\\icons\\web.svg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\icons\\web.svg',
+   'DATA'),
+  ('web_view\\static\\img\\testimonial-1.jpg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\img\\testimonial-1.jpg',
+   'DATA'),
+  ('web_view\\static\\img\\testimonial-2.jpg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\img\\testimonial-2.jpg',
+   'DATA'),
+  ('web_view\\static\\img\\user.jpg',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\img\\user.jpg',
+   'DATA'),
+  ('web_view\\static\\js\\htmx.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\js\\htmx.js',
+   'DATA'),
+  ('web_view\\static\\js\\main.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\js\\main.js',
+   'DATA'),
+  ('web_view\\static\\lib\\chart\\chart.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\chart\\chart.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\easing\\easing.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\easing\\easing.js',
+   'DATA'),
+  ('web_view\\static\\lib\\easing\\easing.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\easing\\easing.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\LICENSE',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\LICENSE',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\ajax-loader.gif',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\ajax-loader.gif',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.carousel.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.carousel.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.carousel.min.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.carousel.min.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.default.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.default.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.default.min.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.default.min.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.green.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.green.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.green.min.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.theme.green.min.css',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\assets\\owl.video.play.png',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\assets\\owl.video.play.png',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\owl.carousel.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\owl.carousel.js',
+   'DATA'),
+  ('web_view\\static\\lib\\owlcarousel\\owl.carousel.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\owlcarousel\\owl.carousel.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\js\\moment-timezone.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\js\\moment-timezone.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\js\\moment.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\js\\moment.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js',
+   'DATA'),
+  ('web_view\\static\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js',
+   'DATA'),
+  ('web_view\\static\\lib\\waypoints\\links.php',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\waypoints\\links.php',
+   'DATA'),
+  ('web_view\\static\\lib\\waypoints\\waypoints.min.js',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\lib\\waypoints\\waypoints.min.js',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_accordion.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_accordion.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_alert.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_alert.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_badge.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_badge.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_breadcrumb.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_breadcrumb.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_button-group.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_button-group.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_buttons.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_buttons.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_card.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_card.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_carousel.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_carousel.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_close.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_close.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_containers.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_containers.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_dropdown.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_dropdown.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_forms.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_forms.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_functions.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_functions.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_grid.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_grid.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_helpers.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_helpers.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_images.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_images.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_list-group.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_list-group.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_mixins.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_mixins.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_modal.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_modal.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_nav.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_nav.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_navbar.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_navbar.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_offcanvas.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_offcanvas.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_pagination.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_pagination.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_popover.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_popover.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_progress.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_progress.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_reboot.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_reboot.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_root.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_root.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_spinners.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_spinners.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_tables.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_tables.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_toasts.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_toasts.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_tooltip.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_tooltip.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_transitions.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_transitions.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_type.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_type.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_utilities.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_utilities.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\_variables.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\_variables.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\bootstrap-grid.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\bootstrap-grid.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\bootstrap-reboot.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\bootstrap-reboot.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\bootstrap-utilities.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\bootstrap-utilities.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\bootstrap.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\bootstrap.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-check.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-check.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-control.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-control.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-range.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-range.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-select.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-select.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-text.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_form-text.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_input-group.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_input-group.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_labels.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_labels.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\forms\\_validation.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\forms\\_validation.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_position.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_position.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_ratio.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_ratio.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_alert.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_alert.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_buttons.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_buttons.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_caret.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_caret.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_container.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_container.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_forms.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_forms.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_gradients.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_gradients.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_grid.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_grid.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_image.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_image.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_list-group.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_list-group.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_lists.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_lists.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_pagination.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_pagination.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_resize.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_resize.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_transition.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_transition.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_utilities.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_utilities.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\utilities\\_api.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\utilities\\_api.scss',
+   'DATA'),
+  ('web_view\\static\\scss\\bootstrap\\scss\\vendor\\_rfs.scss',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\static\\scss\\bootstrap\\scss\\vendor\\_rfs.scss',
+   'DATA'),
+  ('web_view\\templates\\base.html',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\templates\\base.html',
+   'DATA'),
+  ('web_view\\templates\\index.html',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\templates\\index.html',
+   'DATA'),
+  ('web_view\\templates\\web_protection.html',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\web_view\\templates\\web_protection.html',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\licenses\\LICENSE.BSD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\licenses\\LICENSE.BSD',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\WHEEL',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\RECORD',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\licenses\\LICENSE.APACHE',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\licenses\\LICENSE.APACHE',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\METADATA',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\REQUESTED',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\REQUESTED',
+   'DATA'),
+  ('cryptography-44.0.2.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\cryptography-44.0.2.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\LICENSE',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\importlib_metadata-8.0.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
+   'ipsum.txt',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.2.0.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\click-8.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\entry_points.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\itsdangerous-2.2.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\WHEEL',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\itsdangerous-2.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('click-8.2.0.dist-info\\licenses\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\click-8.2.0.dist-info\\licenses\\LICENSE.txt',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\itsdangerous-2.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('click-8.2.0.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\click-8.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug-3.1.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug-3.1.3.dist-info\\WHEEL',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\itsdangerous-2.2.0.dist-info\\WHEEL',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('click-8.2.0.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\click-8.2.0.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug-3.1.3.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\REQUESTED',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\top_level.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\top_level.txt',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\LICENSE.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug-3.1.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('MarkupSafe-3.0.2.dist-info\\RECORD',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\MarkupSafe-3.0.2.dist-info\\RECORD',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\entry_points.txt',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\entry_points.txt',
+   'DATA'),
+  ('werkzeug-3.1.3.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\werkzeug-3.1.3.dist-info\\METADATA',
+   'DATA'),
+  ('click-8.2.0.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\click-8.2.0.dist-info\\METADATA',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\REQUESTED',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\REQUESTED',
+   'DATA'),
+  ('flask-3.1.0.dist-info\\WHEEL',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\flask-3.1.0.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools\\_vendor\\wheel-0.45.1.dist-info\\METADATA',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\setuptools\\_vendor\\wheel-0.45.1.dist-info\\METADATA',
+   'DATA'),
+  ('itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\itsdangerous-2.2.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\Videos\\PcCare\\desk_care\\build\\main\\base_library.zip',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1747164311,
+ [('runw.exe',
+   'C:\\Users\\EliteBook 800 '
+   'G4\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
+   'EXECUTABLE')],
+ 'C:\\Program '
+ 'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\python312.dll')

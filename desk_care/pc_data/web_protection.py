@@ -4,6 +4,10 @@ import subprocess
 import socket
 import ctypes 
 
+from urllib.parse import urlparse
+from duckduckgo_search import DDGS
+
+
 def set_to_admin(): 
     
      ctypes.windll.shell32.ShellExecuteW(
@@ -34,8 +38,21 @@ def block_sites_using_host_file(domains):
 
 def block_sites_using_firewall(websites):
     
-   
-  
+
+    """
+    Blocks the specified websites using the system's firewall.
+
+    This function takes a list of website URLs, resolves their IP addresses,
+    and adds firewall rules to block outgoing traffic to these IPs. It uses
+    the Windows 'netsh' command to add firewall rules.
+
+    Args:
+        websites (list): A list of website URLs to block.
+
+    Returns:
+        str: The standard output or error message from the firewall command execution.
+    """
+
     try:
         for website in websites:
             
@@ -49,6 +66,24 @@ def block_sites_using_firewall(websites):
     except Exception as e:
         resp = f"Error: {e}"
     return resp
+
+
+def get_site_domains_from_keywords(keyword, max_results):
+    
+    results = DDGS().text(keyword, max_results=max_results)
+    domains = set()
+
+    for r in results:
+        url = r.get("href")
+        if url:
+            parsed = urlparse(url)
+            netloc = parsed.netloc
+            # Normalize: add www if missing
+            if netloc and not netloc.startswith("www."):
+                netloc = "www." + netloc
+            domains.add(netloc)
+
+    return sorted(domains)
             
             
                     
