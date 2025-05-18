@@ -2,7 +2,7 @@ from flask import Flask,render_template,request
 from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
     get_cpu_performance,calculate_usage
 from pc_data.web_protection import block_sites_using_host_file,\
-    block_sites_using_firewall,set_to_admin,get_site_domains_from_keywords
+    block_sites_using_firewall,set_to_admin,get_site_domains_from_keywords,unblock_site_firewall_method,unblock_site_host_method
 from flask import jsonify
 
 from web_view import app
@@ -139,39 +139,52 @@ def block_sites_view():
     set_to_admin()
     
     
-    sites = ["www.facebook.com", "facebook.com"]
-    print("=========Host File Method===========")
-    try:
-    
-        resp = block_sites_using_host_file(sites)
-        print(resp)
-        
-    except Exception as e: 
-        
-        resp = f"Error: {e}"
-        print(resp)
-        
-    print("=========Attempting Firewall Method===========")
-    
-    try:
-    
-        resp = block_sites_using_firewall(sites)
-        print(resp)
-        
-    except Exception as e: 
-        
-        resp = f"Error: {e}"
-        
-        print(resp)
     
     return render_template('web_protection.html')
 
 @app.route('/block_selected_site',methods=["POST"])
 def block_selected_site_view(): 
     
-    website = request.form.get("website")
+    website = request.form.get("website").split(",")
     
-    return f"<strong>{website}</strong>"
+    print(website)
+    
+    days = request.form.get("days")
+    
+    hours_from = request.form.get("timefrom")
+    
+    hours_to = request.form.get("timeto")
+    
+    justblock = request.form.get("justblock")
+    
+    print(days)
+    print(hours_from)
+    print(justblock)
+    
+    try:
+        
+        resp = block_sites_using_host_file(website)
+        
+    except Exception as err: 
+        
+        resp  = str(err)
+        
+    
+    return f"<strong style='color:green'>{website} -> {resp}</strong>"
+
+@app.route('/unblock_selected_site',methods=["POST"])
+def unblock_selected_site_view():
+    
+    sites = request.form.get("website2").split(",")
+    
+    resp = unblock_site_host_method(sites)
+    
+                                                            
+    
+    
+    return f"<strong style='color:green'>{sites} {resp}</strong>"
+    
+    
 
 @app.route('/search_site_and_block',methods=["POST"])
 def search_site_and_block_view(): 

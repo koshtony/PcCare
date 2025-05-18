@@ -130,8 +130,8 @@
 
                             <form hx-post="{{url_for('block_selected_site_view')}}" hx-target="#success-failed" hx-indicator="#block-site-spinner">
                                 <div class="form-group">
-                                    <label for="">Website address (www.example.com)</label>
-                                    <input type="text" class="form-control" name="website" id="website" aria-describedby="emailHelp" placeholder="Enter site address" required>
+                                    <label for="">Website address (www.example.com) Separate Multiple with comma</label>
+                                    <textarea cols="4" class="form-control" name="website" id="website" aria-describedby="emailHelp" placeholder="Enter site address" required></textarea>
                                     
                                 </div>
                                 <br>
@@ -151,13 +151,22 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="hours">Hours To Block</label>
-                                    <input type="time" class="form-control" id="time" name="time" value="12:00" min="00:00" max="23:59">
+                                    <label for="hours">Time From</label>
+                                    <input type="time" class="form-control" id="time" name="timefrom" value="12:00" min="00:00" max="23:59">
 
                                    
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="hours">Time To</label>
+                                    <input type="time" class="form-control" id="time" name="timeto" value="12:00" min="00:00" max="23:59">
+
+                                   
+                                </div>
+
+
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="justblock">
+                                    <input type="checkbox" class="form-check-input" name="justblock" id="justblock">
                                     <label class="form-check-label" for="exampleCheck1">Just Block</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -173,7 +182,7 @@
                             </div>
                         
                             <div class="d-flex mb-2">
-                                <input class="form-control bg-dark border-0" name="site_key_word" type="text" placeholder="Enter task" hx-post="{{url_for('search_site_and_block_view')}}" hx-trigger="keyup changed delay:9000ms" hx-indicator="#search-site-spinner" hx-target="#search-result">
+                                <input class="form-control bg-dark border-0" name="site_key_word" type="text" placeholder="Enter keyword to search" hx-post="{{url_for('search_site_and_block_view')}}" hx-trigger="keyup changed delay:9000ms" hx-indicator="#search-site-spinner" hx-target="#search-result">
                                 
                             </div>
 
@@ -203,12 +212,25 @@
                                 <h6 class="mb-0">Unblock Site</h6>
                                 
                             </div>
-                            <form>
+                            <div class="htmx-indicator" id="unblock-site-spinner" style="color:green;">
+
+                                <div class="spinner-border spinner-border-sm" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                  </div>
+                                  <div class="spinner-grow spinner-grow-sm" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                  </div>
+
+                            </div>
+
+                            <div id="unblock-success-failed"></div>
+                            <form hx-post="{{url_for('unblock_selected_site_view')}}" hx-target="#unblock-success-failed" hx-indicator="#unblock-site-spinner">
                                 <div class="form-group">
-                                    <label for="">Website address (www.example.com)</label>
-                                    <input type="text" class="form-control" id="website2"placeholder="Enter site address">
+                                    <label for="">Website address (www.example.com) multiple separate by comma</label>
+                                    <textarea type="text" class="form-control" id="website2" name="website2" placeholder="Enter site address"></textarea>
                                     
                                 </div>
+                                <br>
 
                                 <button type="submit" class="btn btn-success">Remove</button>
 

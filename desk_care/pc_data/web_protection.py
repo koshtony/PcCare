@@ -54,7 +54,11 @@ def block_sites_using_firewall(websites):
     """
 
     try:
+        
+        resp = ""
         for website in websites:
+            
+            print(website)
             
             ip_address = socket.gethostbyname(website)
             
@@ -62,10 +66,54 @@ def block_sites_using_firewall(websites):
             cmd =   f'netsh advfirewall firewall add rule name="{rule_name}" dir=out action=block remoteip={ip_address} enable=yes'
             result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
             
-            resp = result.stdout or result.stderr
+            resp += result.stdout or result.stderr
     except Exception as e:
         resp = f"Error: {e}"
     return resp
+
+def unblock_site_firewall_method(sites):
+    
+    try:
+        
+        resp = ""
+        for site in sites:
+            ip_address = socket.gethostbyname(site)
+            
+            rule_name = f"Block {ip_address}"
+            
+            cmd = f'netsh advfirewall firewall delete rule name="{rule_name}"'
+            result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+            resp +=  result.stdout or result.stderr
+            
+    except Exception as err:
+        
+        resp = f"Error: {err}"
+        
+    return resp
+
+def unblock_site_host_method(domains): 
+    
+    HOSTS_PATH = r"C:\Windows\System32\drivers\etc\hosts"
+    if not os.path.exists(HOSTS_PATH):
+        print("❌ Hosts file not found.")
+        return
+
+    with open(HOSTS_PATH, 'r') as file:
+        lines = file.readlines()
+
+    new_lines = []
+    for line in lines:
+        if not any(domain in line for domain in domains):
+            new_lines.append(line)
+
+    with open(HOSTS_PATH, 'w') as file:
+        file.writelines(new_lines)
+
+    return "✅ Unblocked sites:", ", ".join(domains)
+        
+        
+        
+        
 
 
 def get_site_domains_from_keywords(keyword, max_results):
