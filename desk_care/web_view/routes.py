@@ -2,8 +2,12 @@ from flask import Flask,render_template,request
 from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
     get_cpu_performance,calculate_usage
 from pc_data.web_protection import block_sites_using_host_file,\
-    block_sites_using_firewall,set_to_admin,get_site_domains_from_keywords,unblock_site_firewall_method,unblock_site_host_method
+    get_site_domains_from_keywords,\
+    unblock_site_host_method,list_blocked_sites,get_domain_info,run_pktmon_capture,extract_domains_from_pktmon
 from flask import jsonify
+import threading
+
+
 
 from web_view import app
 @app.route('/')
@@ -133,14 +137,27 @@ def get_download_upload_speed_view():
     return {"download_speed":download_speed,"upload_speed":upload_speed}
 
 
+
+
 @app.route('/block_sites')
 def block_sites_view():
     
-    set_to_admin()
+    sites = list_blocked_sites() 
+    
+    sites_info = get_domain_info(sites)
+    
+    threading.Thread(target=run_pktmon_capture, daemon=True).start()
     
     
-    
-    return render_template('web_protection.html')
+    return render_template('web_protection.html',sites_info=sites_info)
+
+@app.route('/visited-domains')
+def visited_domains():
+    domains = extract_domains_from_pktmon()
+    print(domains)
+    if not domains:
+        return jsonify({"message": "No capture data available. Run /start-capture first."}), 404
+    return jsonify(domains)
 
 @app.route('/block_selected_site',methods=["POST"])
 def block_selected_site_view(): 

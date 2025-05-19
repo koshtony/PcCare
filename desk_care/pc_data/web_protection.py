@@ -3,9 +3,15 @@ import sys
 import subprocess
 import socket
 import ctypes 
-
+import requests
+from bs4 import BeautifulSoup
+from scapy.all import sniff, DNSQR
 from urllib.parse import urlparse
 from duckduckgo_search import DDGS
+import pyshark
+import asyncio
+import time
+import re
 
 
 def set_to_admin(): 
@@ -110,10 +116,133 @@ def unblock_site_host_method(domains):
         file.writelines(new_lines)
 
     return "✅ Unblocked sites:", ", ".join(domains)
+
+
+def list_blocked_sites(): 
+    
+    HOSTS_PATH = r"C:\Windows\System32\drivers\etc\hosts"
+    BLOCKED_IPS = ["127.0.0.1", "0.0.0.0"]
+    
+    blocked = []
+    if not os.path.exists(HOSTS_PATH):
+        return blocked
+
+    with open(HOSTS_PATH, 'r') as file:
+        for line in file:
+            if line.strip().startswith("#") or not line.strip():
+                continue
+            parts = line.strip().split()
+            if len(parts) >= 2 and parts[0] in BLOCKED_IPS:
+                blocked.append(parts[1])
+    return blocked
+
+
+def get_site_text_summary(domain):
+    
+    
+    if not domain.startswith("http"):
+        domain = "http://" + domain  # fallback to HTTP
+
+    try:
+        response = requests.get(domain, timeout=5)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Remove scripts and styles
+        for tag in soup(['script', 'style', 'noscript']):
+            tag.decompose()
+
+        # Extract visible text
+        text = soup.get_text(separator='\n')
+        lines = [line.strip() for line in text.splitlines() if line.strip()]
+
+        if lines:
+            return lines[0]  # first non-empty line
+        else:
+            return "No visible content found."
+
+    except Exception as e:
+        return f"Error fetching domain: {e}"
+    
+    
+def get_domain_info(sites):
+    
+    site_info = []
+    
+    for site in sites:
+        
+        info = {
+            
+            "name":site.split(".")[0] if len(site.split("."))==2 else site.split(".")[1],
+            "domain":site,
+            "ip adrress":socket.gethostbyname(site),
+            "content":get_site_text_summary(site)
+        }
+        
+        site_info.append(info)
+        
+    
+        
+    return site_info
+
+pktmon_txt = "PktMon.txt"
+
+
+def remove_old_files():
+    for file in ["PktMon.etl", "PktMon.txt"]:
+        if os.path.exists(file):
+            os.remove(file)
+            print(f"Removed old file: {file}")
+def run_pktmon_capture(duration=30):
+    
+    try:
+        remove_old_files()
+        subprocess.run("pktmon start --etw", shell=True, check=True)
+        print("Pktmon started.")
+        
+        time.sleep(duration)
+        
+        subprocess.run("pktmon stop", shell=True, check=True)
+        print("Pktmon stopped.")
+        
+        subprocess.run("pktmon format PktMon.etl -o PktMon.txt", shell=True, check=True)
+        print("Pktmon formatted.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during pktmon operation: {e}")
+        
+
+def extract_domains_from_pktmon():
+   
+    if not os.path.exists(pktmon_txt):
+       
+        return []
+
+    query_patterns = [
+    re.compile(r"Query Name\s*:\s*(\S+)", re.IGNORECASE),
+    re.compile(r"DNS Query\s*:\s*(\S+)", re.IGNORECASE),
+    ]
+
+    domains = set()
+
+    with open(pktmon_txt, "r", encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            print(line.strip())
+            for pattern in query_patterns:
+                match = pattern.search(line)
+                if match:
+                    domain = match.group(1).lower()
+                    domains.add(domain)
+    return sorted(domains)
+
+    
+    
+    
         
         
-        
-        
+
+    
+    
+
 
 
 def get_site_domains_from_keywords(keyword, max_results):

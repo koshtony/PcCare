@@ -84,18 +84,20 @@
                                     <th>Name</th>
                                     <th>Address</th>
                                     <th>Ip</th>
-                                    <th></th>
+                                    <th>Content</th>
                                    
                                 </tr>
                             </thead>
                             <tbody>
-
+                                   {% for info in sites_info %}
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>{{info["name"]}}</td>
+                                    <td>{{info["domain"]}}</td>
+                                    <td>{{info["ip adrress"]}}</td>
+                                    <td>{{info["content"]}}</td>
                                 </tr>
+
+                                {% endfor %}
                                
                             </tbody>
                         </table>
