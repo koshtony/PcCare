@@ -4,6 +4,8 @@ from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
 from pc_data.web_protection import block_sites_using_host_file,\
     get_site_domains_from_keywords,\
     unblock_site_host_method,list_blocked_sites,get_domain_info,run_pktmon_capture,extract_domains_from_pktmon
+    
+from pc_data.track_domains import *
 from flask import jsonify
 import threading
 
@@ -151,13 +153,28 @@ def block_sites_view():
     
     return render_template('web_protection.html',sites_info=sites_info)
 
-@app.route('/visited-domains')
-def visited_domains():
-    domains = extract_domains_from_pktmon()
-    print(domains)
-    if not domains:
-        return jsonify({"message": "No capture data available. Run /start-capture first."}), 404
-    return jsonify(domains)
+@app.route('/start_packet_capture')
+def start_packet_capture_view(): 
+    
+    ensure_npcap()
+    
+    if is_sniffer_running(): 
+        
+        resp = "Tracker Already Running"
+        
+    start_sniffer()
+    
+    resp = "Started Tracking ---"
+    
+    return render_template('start_tracking.html',resp=resp,domains=sorted(visited_domains),n=len(visited_domains)) 
+
+
+@app.route('/visited_domains')
+def visited_domains_view(): 
+    
+    return render_template("visited_domains_list.html",domains=sorted(visited_domains),n=len(visited_domains))
+    
+    
 
 @app.route('/block_selected_site',methods=["POST"])
 def block_selected_site_view(): 

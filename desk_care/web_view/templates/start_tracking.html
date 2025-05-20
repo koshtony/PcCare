@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+
+    .htmx-indicator{
+        opacity:0;
+        transition: opacity 500ms ease-in;
+    }
+    .htmx-request .htmx-indicator{
+        opacity:1;
+    }
+    .htmx-request.htmx-indicator{
+        opacity:1;
+    }
+
+    /* Apply styles to the table body */
+
+/* Customize scrollbar width */
+
+
+/* Customize scrollbar thumb */
+
+
+</style>
+        
+            <!-- Sale & Revenue End -->
+
+
+       
+
+
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-secondary text-center rounded p-4">
+
+                      <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Start Tracking</h6>
+                                <button class="btn btn-success">Start</button>
+                        </div>
+                        <div class="htmx-indicator" id="domains-spinner" style="color:green;">
+
+                            <div class="spinner-border spinner-border-sm" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                              <div class="spinner-grow spinner-grow-sm" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+
+                        </div>
+                    <a hx-get="{{url_for('visited_domains_view')}}" hx-target="#domainTab" hx-indicator="#domains-spinner" id="domain-stream"></a>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">status: {{resp}}</h6>
+                        
+                    </div>
+                    <div class="table-responsive" style="height:500px;overflow-y:scroll;scrollbar-width:thin;">
+                        
+                        <table class="table text-start align-middle table-bordered table-hover mb-0" >
+                            <thead>
+                                <tr class="text-white">
+                                    <th>#</th>
+                                    <th>Domains</th>
+                                    <th>Ip Address</th>
+                                    <th>Visit</th>
+                                    <th>Block</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody id="domainTab">
+                                
+                                   {% for domain in domains %}
+                                <tr>
+                                    <td>{{n}}</td>
+                                    <td>{{domain}}</td>
+                                    <td>{{domain}}</td>
+                                    <td><a href="{{domain}}" target="_blank" rel="noopener noreferrer">Visit</a></td>
+                                    <td><a href="{{domain}}">Block <i class="fa fa-times"></i></a></td>
+
+
+                                    
+                                </tr>
+
+                                {% endfor %}
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Sales End -->
+
+
+            <!-- Widgets Start -->
+        
+            <!-- Widgets End -->
+            
+<script>
+
+    function startDomainStream(){
+
+         let domain_stream_link = document.getElementById("domain-stream")
+
+         domain_stream_link.click()
+
+    }
+
+
+    setInterval(startDomainStream,10000)
+
+</script>
+         
+{% endblock content %}
+
