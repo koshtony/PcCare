@@ -117,6 +117,35 @@ def unblock_site_host_method(domains):
 
     return "✅ Unblocked sites:", ", ".join(domains)
 
+def unblock_individual_domain_host_method(domain): 
+    
+    hosts_path = "/etc/hosts" if os.name != "nt" else r"C:\Windows\System32\drivers\etc\hosts"
+    
+    try:
+        with open(hosts_path, 'r') as file:
+            lines = file.readlines()
+
+        new_lines = []
+        found = False
+        for line in lines:
+            if domain in line and ("127.0.0.1" in line or "0.0.0.0" in line):
+                found = True
+                # skip this line (unblock)
+                continue
+            new_lines.append(line)
+
+        if found:
+            with open(hosts_path, 'w') as file:
+                file.writelines(new_lines)
+            return f"✅ Unblocked: {domain}"
+        else:
+            return f"ℹ️ Domain not blocked: {domain}"
+
+    except PermissionError:
+        return "❌ Permission denied. Please run this script as administrator or with sudo."
+    except Exception as e:
+        return f"❌ Error: {e}"
+
 
 def list_blocked_sites(): 
     
@@ -185,6 +214,8 @@ def get_domain_info(sites):
         
     return site_info
 
+
+
 pktmon_txt = "PktMon.txt"
 
 
@@ -193,6 +224,8 @@ def remove_old_files():
         if os.path.exists(file):
             os.remove(file)
             print(f"Removed old file: {file}")
+            
+            
 def run_pktmon_capture(duration=30):
     
     try:

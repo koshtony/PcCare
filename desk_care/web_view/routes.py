@@ -3,7 +3,7 @@ from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
     get_cpu_performance,calculate_usage
 from pc_data.web_protection import block_sites_using_host_file,\
     get_site_domains_from_keywords,\
-    unblock_site_host_method,list_blocked_sites,get_domain_info,run_pktmon_capture,extract_domains_from_pktmon
+    unblock_site_host_method,list_blocked_sites,get_domain_info,run_pktmon_capture,unblock_individual_domain_host_method
     
 from pc_data.track_domains import *
 from flask import jsonify
@@ -203,8 +203,11 @@ def block_selected_site_view():
         
         resp  = str(err)
         
+    sites = list_blocked_sites() 
     
-    return f"<strong style='color:green'>{website} -> {resp}</strong>"
+    sites_info = get_domain_info(sites)
+    
+    return render_template("update_blocked_domains.html",sites_info=sites_info)
 
 @app.route('/unblock_selected_site',methods=["POST"])
 def unblock_selected_site_view():
@@ -217,6 +220,19 @@ def unblock_selected_site_view():
     
     
     return f"<strong style='color:green'>{sites} {resp}</strong>"
+
+@app.route('/unblock_individual_domain/<domain>')
+def unblock_individual_domain_view(domain):
+    
+    resp = unblock_individual_domain_host_method(domain)
+    
+    sites = list_blocked_sites() 
+    
+    sites_info = get_domain_info(sites)
+    
+    return render_template("update_blocked_domains.html",sites_info=sites_info)
+    
+    
     
     
 

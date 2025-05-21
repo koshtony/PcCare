@@ -1,0 +1,20 @@
+{% for info in sites_info %}
+                                <tr>
+                                    <td>{{info["name"]}}</td>
+                                    <td>{{info["domain"]}}</td>
+                                    <td>{{info["ip adrress"]}}</td>
+                                    <td>{{info["content"]}}</td>
+                                    <td>
+ 
+                                        <a hx-get="{{url_for('unblock_individual_domain_view',domain=info.domain)}}" hx-target="#block-resp">
+
+                                            <img style="width: 30px; height: 30px; color:green;" src="{{url_for('static',filename='icons/unblock.svg')}}">
+
+                                        </a>
+
+                                    </td>
+                                </tr>
+
+                                {% endfor %}
+                               
+
