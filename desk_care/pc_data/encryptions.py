@@ -17,23 +17,29 @@ def create_key_from_password(salt,password):
     return base64.urlsafe_b64encode(kdf.derive(password.encode()))
     
     
-    
+UPLOAD_FOLDER = "ENCRYPTED_FILES"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-def encrypt_file_password_method(filename,password):
+def encrypt_file_password_method(file,password):
     
     salt = os.urandom(20) 
     key = create_key_from_password(salt,password)
     
     fernet = Fernet(key)
     
-    with open(filename,"rb") as file:
-        file_info = file.read()
+    file_info = file.read()
     
     encrypt_ = fernet.encrypt(file_info)
     
-    with open(filename,"wb") as file: 
+    save_as = file.filename + ".enc"
+    
+    save_as_path = os.path.join(UPLOAD_FOLDER,save_as)
+    
+    with open(save_as_path,"wb") as file: 
         
         file.write(salt + encrypt_)
+        
+    return f">Encrypted {save_as} Successfully"
         
         
 def decrypt_file_password_method(filename,password): 

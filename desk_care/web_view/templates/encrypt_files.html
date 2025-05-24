@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+
+    .htmx-indicator{
+        opacity:0;
+        transition: opacity 500ms ease-in;
+    }
+    .htmx-request .htmx-indicator{
+        opacity:1;
+    }
+    .htmx-request.htmx-indicator{
+        opacity:1;
+    }
+
+    /* Apply styles to the table body */
+
+/* Customize scrollbar width */
+
+
+/* Customize scrollbar thumb */
+
+
+</style>
+        
+            <!-- Sale & Revenue End -->
+
+
+       
+
+
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4">
+
+
+                <div class="htmx-indicator" id="upload-spinner" style="color:green;">
+
+                    <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                      <div class="spinner-grow spinner-grow-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+
+                </div>
+
+                <div id="upload-resp">
+
+                </div>
+
+                
+
+                <div class="bg-secondary text-center rounded p-4">
+
+                    <form hx-post="{{url_for('get_file_to_encrypt_view')}}" 
+                    hx-target="#upload-resp"
+                    hx-indicator="#upload-spinner"
+                    hx-swap="innerHTML"
+                    enctype="multipart/form-data"
+                    method="POST">
+
+                        <div class="row">
+    
+                            <div class="col-4">
+                        
+                            <div class="form-group form-check">
+    
+                                <label class="form-check-label" >Upload Files</label>
+                                <input type="file" name="files" multiple>
+                            
+                            </div>
+
+                            
+    
+                         </div>
+
+                         <div class="col-4">
+                        
+                            <div class="form-group form-check">
+    
+                                <label class="form-check-label" >Password</label>
+                                <input type="password" name="pass" multiple>
+                            
+                            </div>
+
+                            
+    
+                         </div>
+    
+                         
+                        
+                         <div class="col-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                         </div>
+    
+                    </div>
+                      </form>
+
+                      <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0"></h6>
+                                <button class="btn btn-success">Decrypt All Files</button>
+                        </div>
+                        
+                    <a hx-get="{{url_for('visited_domains_view')}}" hx-target="#domainTab" hx-indicator="#domains-spinner" id="domain-stream"></a>
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">status: {{resp}}</h6>
+                        
+                    </div>
+                    <div class="table-responsive" style="height:500px;overflow-y:scroll;scrollbar-width:thin;">
+                        
+                        <table class="table text-start align-middle table-bordered table-hover mb-0" >
+                            <thead>
+                                <tr class="text-white">
+                                    <th>#</th>
+                                    <th>File Name</th>
+                                    <th>File Location</th>
+                                    <th>MetaData</th>
+                                    <th>Status</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody id="domainTab">
+                                
+                                
+                                <tr>
+                                    
+
+
+                                    
+                                </tr>
+
+                        
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Sales End -->
+
+
+            <!-- Widgets Start -->
+        
+            <!-- Widgets End -->
+            
+<script>
+
+  
+
+</script>
+         
+{% endblock content %}
+

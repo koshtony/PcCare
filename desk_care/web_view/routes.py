@@ -4,6 +4,8 @@ from pc_data.pc_info import get_cpu_battery,get_cpu_temperature,\
 from pc_data.web_protection import block_sites_using_host_file,\
     get_site_domains_from_keywords,\
     unblock_site_host_method,list_blocked_sites,get_domain_info,run_pktmon_capture,unblock_individual_domain_host_method
+
+from pc_data.encryptions import encrypt_file_password_method
     
 from pc_data.track_domains import *
 from flask import jsonify
@@ -97,11 +99,16 @@ def get_cpu_perf_view():
     return {"times":times,"freq":freq}
 
 
+
 @app.route('/get_chart_data')
 def get_chart_data():
 
     """
     Retrieve the current CPU frequency data for the chart.
+
+    This function returns a dictionary containing the current CPU frequency data
+    with the keys 'current', 'min', and 'max'. The data is obtained by calling
+    the get_cpu_performance() function.
 
     Returns:
         dict: A dictionary containing the current CPU frequency data
@@ -122,6 +129,7 @@ def get_chart_data():
     
     return data
 
+
 @app.route('/get_download_upload_speed')
 def get_download_upload_speed_view():
     
@@ -129,11 +137,20 @@ def get_download_upload_speed_view():
     """
     Retrieve the current download and upload speeds.
 
+    This function uses the `get_upload_download_speed` function to obtain
+    the current internet download and upload speeds and returns them as a
+    dictionary with keys 'download_speed' and 'upload_speed'.
+
     Returns:
         dict: A dictionary containing the current download and upload speeds
         with the keys 'download_speed' and 'upload_speed'.
     """
+    # Use the function to get the speeds
+    # Initialize the download and upload speeds
+    download_speed, upload_speed = get_upload_download_speed()
 
+    # Return the speeds in a dictionary
+    return {"download_speed": download_speed, "upload_speed": upload_speed}
     download_speed,upload_speed = 0,0
     
     return {"download_speed":download_speed,"upload_speed":upload_speed}
@@ -141,9 +158,22 @@ def get_download_upload_speed_view():
 
 
 
+
+
 @app.route('/block_sites')
 def block_sites_view():
     
+
+    """
+    Web page for managing blocked sites.
+
+    This function renders a web page showing the current list of blocked
+    sites. It also starts a thread to run the packet capture utility.
+
+    Returns:
+        str: The rendered HTML page.
+    """
+
     sites = list_blocked_sites() 
     
     sites_info = get_domain_info(sites)
@@ -156,6 +186,16 @@ def block_sites_view():
 @app.route('/start_packet_capture')
 def start_packet_capture_view(): 
     
+
+    """
+    Web page for starting the packet capture utility.
+
+    This function renders a web page after starting the packet capture utility.
+
+    Returns:
+        str: The rendered HTML page.
+    """
+
     ensure_npcap()
     
     if is_sniffer_running(): 
@@ -172,6 +212,18 @@ def start_packet_capture_view():
 @app.route('/visited_domains')
 def visited_domains_view(): 
     
+
+    """
+    Render a web page displaying a list of visited domains.
+
+    This function renders the 'visited_domains_list.html' template, passing
+    a sorted list of visited domains and their count.
+
+    Returns:
+        str: The rendered HTML page with visited domains.
+    """
+
+
     return render_template("visited_domains_list.html",domains=sorted(visited_domains),n=len(visited_domains))
     
     
@@ -179,6 +231,27 @@ def visited_domains_view():
 @app.route('/block_selected_site',methods=["POST"])
 def block_selected_site_view(): 
     
+
+    """
+    Web page for blocking selected sites.
+
+    This function renders a web page after blocking the specified website(s)
+    using the host file method.
+
+    Args:
+        website (list): A list of website URLs to block.
+        days (str): The number of days to block. If empty, block until manually
+            unblocked.
+        hours_from (str): The time to start blocking in the format "HH:MM".
+        hours_to (str): The time to end blocking in the format "HH:MM".
+        justblock (str): A flag to indicate if only blocking should be done
+            without scheduling.
+
+    Returns:
+        str: The rendered HTML page with the status of the blocking operation.
+    """
+    
+
     website = request.form.get("website").split(",")
     
     print(website)
@@ -244,6 +317,41 @@ def search_site_and_block_view():
     sites_domains = get_site_domains_from_keywords(site_key_word,2)
     
     return render_template('search_site.html',sites = sites_domains)
+
+
+@app.route('/encrypt_files')
+def encrypt_files_view():
+    
+    return render_template('encrypt_files.html')
+
+@app.route('/get_file_to_encrypt',methods=["POST"])
+
+def get_file_to_encrypt_view():
+    
+    files = request.files.getlist("files")
+    password = request.form.get("pass")
+    
+    responses = []
+    
+    for file in files:
+        
+        resp= encrypt_file_password_method(file,password)
+        responses.append(resp)
+        
+    print(responses)
+    
+    return f"{responses} >>"
+        
+        
+    
+    
+    
+    
+
+    
+    
+    
+    
     
     
     
